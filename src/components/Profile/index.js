@@ -30,13 +30,13 @@ const Profile = ({
   return (
     <div className='bg-white opacity-100  w-[367px] rounded-lg px-6 py-6 flex flex-col'>
       <div className=' rounded-full self-center flex justify-center items-center'>
-        <img src={img} className='w-[200px] h-[200px]'/>
+        <img src={img} className='w-[200px] h-[200px]' alt="img"/>
       </div>
       <p className='text-center font-semibold text-2xl mt-4'>{name}</p>
       <div className='mt-8 flex flex-col gap-y-6'>
         <div className='flex gap-x-4 items-center'>
             <div className='w-[42px] h-[42px] rounded-full flex justify-center items-center bg-[#f7f6f7]'>
-            <img src={Calend} />
+            <img src={Calend} alt="img"/>
             </div>
             <div className=''>
                 <p className="text-xs font-thin">Date Of Birth</p>
@@ -45,7 +45,7 @@ const Profile = ({
         </div>
         <div className='flex gap-x-4 items-center'>
             <div className='w-[42px] h-[42px] rounded-full flex justify-center items-center bg-[#f7f6f7]'>
-            <img src={FemaleIcon} />
+            <img src={FemaleIcon} alt="img"/>
             </div>
             <div>
                 <p className="text-xs font-thin">Gender</p>
@@ -54,7 +54,7 @@ const Profile = ({
         </div>
         <div className='flex gap-x-4 items-center'>
             <div className='w-[42px] h-[42px] rounded-full flex justify-center items-center bg-[#f7f6f7]'>
-            <img src={PhoneIcon} />
+            <img src={PhoneIcon} alt="img"/>
             </div>
             <div>
                 <p className="text-xs font-thin">Contact Info.</p>
@@ -63,7 +63,7 @@ const Profile = ({
         </div>
         <div className='flex gap-x-4 items-center'>
             <div className='w-[42px] h-[42px] rounded-full flex justify-center items-center bg-[#f7f6f7]'>
-            <img src={PhoneIcon} />
+            <img src={PhoneIcon} alt="img"/>
             </div>
             <div>
                 <p className="text-xs font-thin">Emergency Contacts</p>
@@ -72,7 +72,7 @@ const Profile = ({
         </div>
         <div className='flex gap-x-4 items-center'>
             <div className='w-[42px] h-[42px] rounded-full flex justify-center items-center bg-[#f7f6f7]'>
-            <img src={InsuranceIcon} />
+            <img src={InsuranceIcon} alt="img"/>
             </div>
             <div>
                 <p className="text-xs font-thin">Insurance Provider</p>

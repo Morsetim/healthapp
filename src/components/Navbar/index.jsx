@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import TestLog from '../../assets/TestLogo.svg';
 import Settings from '../../assets/settings.svg';
 import More from '../../assets/more.svg';
@@ -13,7 +12,7 @@ const NavBar = () => {
     <div className="rounded-full py-2 px-8 flex bg-white opacity-100 justify-between items-center"> 
       <img src={TestLog} alt='logo' />
       <div className="flex gap-x-4">{NavBarItem.map((list, index) => (
-        <div className="flex gap-x-2 p-2 rounded-full h-8 hover:bg-[#01F0D0] cursor-pointer">
+        <div className="flex gap-x-2 p-2 rounded-full h-8 hover:bg-[#01F0D0] cursor-pointer" key={index}>
             <img src={list.icon} alt='icon' className=""/>
             <p className="text-xs">{list.text}</p>
         </div>

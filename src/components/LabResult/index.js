@@ -9,10 +9,10 @@ const LabResultComp = ({datas}) => {
   <div className='h-full'>
    
     <div className=' h-[205px] overflow-y-auto mt-4 w-full px-1 justify-between '>
-    {datas?.map(data => (
-      <div className='flex justify-between gap-x-2 p-2 w-full'>
+    {datas?.map((data, index) => (
+      <div className='flex justify-between gap-x-2 p-2 w-full' key={index}>
           <p className='text-xs '>{data}</p>
-          <img src={Download}/>
+          <img src={Download} alt="img"/>
       </div>
           ))
       }

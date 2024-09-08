@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import PatientsComp from "./components/Patients";
 import DiagnosisHistComp from "./components/DiagnosisHistory";
-import BodyComp from "./components/Body";
 import Profile from "./components/Profile";
 import DiagnosisList from "./components/DiagnosticList";
 import LabResultComp from "./components/LabResult";
@@ -16,8 +15,6 @@ let auth = btoa(`${username}:${password}`);
 
 function App() {
   const [data, setData] = useState(null);
-  const [error, setError] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
   const [patient, setPatient] = useState(null);
   const [showData, setShowData] = useState(false)
 

@@ -1,7 +1,5 @@
 import React from 'react'
 import More from '../../assets/moree.svg';
-import Doctor from '../../assets/woman.png';
-
 const PatientsComp = ({items, handleClick}) => {
 
 
@@ -9,8 +7,8 @@ const PatientsComp = ({items, handleClick}) => {
     <div className='w-[20%] bg-white opacity-100 h-[850px] p-4 rounded-xl '>
       <h2 className='font-semibold text-2xl'>Patients</h2>
     <div className='mt-8 h-[744px] overflow-y-auto'>
-        {items?.map(item => (
-            <div onClick={() => handleClick(item)} className='flex justify-between items-center py-2'>
+        {items?.map((item, i) => (
+            <div onClick={() => handleClick(item)} className='flex justify-between items-center py-2' key={i}>
                 <div className='flex gap-x-2 items-center cursor-pointer'>
                     <img src={item?.profile_picture} alt='img' className='h-8'/>
                     <div>

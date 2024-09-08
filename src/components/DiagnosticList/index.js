@@ -11,8 +11,8 @@ const DiagnosisList = ({datas}) => {
         <p className='w-[20%]'>Status</p>
       </div>
       <div className=' h-[205px] overflow-y-auto mt-4 w-full px-1 justify-between '>
-      {datas?.map(data => (
-        <div className='flex justify-between gap-x-2 p-2 w-full'>
+      {datas?.map((data, index) => (
+        <div className='flex justify-between gap-x-2 p-2 w-full' key={index}>
             <p className='text-xs w-[20%]'>{data.name}</p>
             <p className='text-xs text-left w-[50%]'>{data.description}</p>
             <p className='text-sm w-[20%] ml-8'>{data.status}</p>

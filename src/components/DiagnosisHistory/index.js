@@ -5,7 +5,6 @@ import Respiratory from '../../assets/respiratory.svg';
 import Temp from '../../assets/temp.svg';
 import Heart from '../../assets/HeartBPM.svg';
 import ArrowDown from '../../assets/arrowDown.svg';
-import Profile from '../Profile';
 
 
 
@@ -41,7 +40,7 @@ const DiagnosisHistComp = ({
         <ResponsiveContainer width="70%" height={300}>
         <div className='flex w-full justify-between'>
          <p className='ml-8 mb-4 font-semibold'>Blood Pressure </p> 
-         <div className='flex items-center gap-x-2'>Last {count} months <span><img src={ArrowDown} /></span></div>
+         <div className='flex items-center gap-x-2'>Last {count} months <span><img src={ArrowDown} alt="img"/></span></div>
         </div>
         <LineChart data={transformedData}>
             <CartesianGrid strokeDasharray="3 3" />
